@@ -13,6 +13,7 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: aliceblue;
+  border-radius: 25px;
 }
 
 html {
@@ -64,6 +65,8 @@ nav ul {
 .projects {
   padding: 32px 0;
   margin-top: 2rem;
+  background-color: aliceblue;
+  border-radius: 25px;
 }
 
 .projects-container {
@@ -81,4 +84,20 @@ nav ul {
   text-align: center;
   width: 50%;
   padding: 1rem;
+}
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
 }
