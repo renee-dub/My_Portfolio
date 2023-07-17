@@ -23,10 +23,39 @@ ul {
   list-style-type: none;
 }
 
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
 .burger-menu {
   font-size: 2rem;
   border: 0;
   background-color: transparent;
   cursor: pointer;
   display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
+  border-radius: 25px;
+}
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+}
+
+.bio p {
+  padding: 0.3rem 0;
 }
