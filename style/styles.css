@@ -41,7 +41,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 3.5rem;
+  padding: 2rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -53,6 +53,7 @@ ul {
 
 nav h1 {
   color: var(--primary-color);
+  font-size: 35px;
 }
 
 a {
@@ -153,6 +154,14 @@ nav ul li {
   padding: 1rem;
 }
 
+.socials {
+  display: flex;
+  margin-top: 2.5rem;
+  gap: 2rem;
+  padding-left: 37.5rem;
+  padding-right: 37.5rem;
+}
+
 .contact {
   margin-top: 2rem;
 }
@@ -174,7 +183,6 @@ nav ul li {
 .contact-form-container label {
   line-height: 2.7rem;
   font-weight: var(--bold-font);
-  color: var(--primary-color);
 }
 
 .contact-form-container input {
@@ -185,6 +193,7 @@ nav ul li {
   width: 100%;
   min-height: 6.25rem;
   font-size: 14px;
+  font-family: var(--font-family);
 }
 
 .contact-form-container input-field {
@@ -200,7 +209,6 @@ nav ul li {
 
 .input-field::placeholder {
   padding: 0.5rem;
-  color: var(--primary-color);
 }
 
 .submit-button {
