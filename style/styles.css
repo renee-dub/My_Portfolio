@@ -21,6 +21,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -67,19 +71,11 @@ a:hover {
 }
 
 nav ul {
-  position: fixed;
-  background-color: var(--bg-color);
-  flex-direction: column;
-  top: 86px;
-  left: 10%;
-  width: 80%;
-  text-align: center;
-  transform: translateX(120%);
-  transition: transform 0.5s ease-in;
+  display: flex;
+  gap: 2rem;
 }
 
 nav ul li {
-  margin: 8px;
   font-weight: var(--bold-font);
 }
 
@@ -89,11 +85,7 @@ nav ul li {
   border: 0;
   background-color: transparent;
   cursor: pointer;
-  display: block;
-}
-
-nav ul.show {
-  transform: translateX(0);
+  display: none;
 }
 
 .about {
@@ -246,4 +238,80 @@ footer {
   text-align: center;
   margin: 2rem 0 0;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    padding: 1.5rem 1rem;
+  }
+  nav ul {
+    position: fixed;
+    background-color: var(--bg-color);
+    flex-direction: column;
+    top: 86px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+
+  nav ul li {
+    margin: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
+
+  .about {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about img {
+    height: 37.5rem;
+    width: 30rem;
+  }
+
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 20.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 23.75rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about img {
+    height: 37.5rem;
+    width: 23rem;
+  }
+
+  .bio {
+    width: 18.3rem;
+  }
+
+  .project-container {
+    width: 17.875rem;
+  }
+
+  .contact-form-container {
+    max-width: 17.75rem;
+  }
 }
