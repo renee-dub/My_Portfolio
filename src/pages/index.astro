@@ -1,0 +1,201 @@
+---
+// Welcome to Astro! Everything between these triple-dash code fences
+// is your "component frontmatter". It never runs in the browser.
+console.log('This runs in your terminal, not the browser!')
+---
+
+<!-- Below is your "component template." It's just HTML, but with
+     some magic sprinkled in to help you build great templates. --><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/styles.css" />
+    <title>Renee Walkinshaw 👩‍💻</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav>
+      <h1>RENEE WALKINSHAW</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+        <li>
+          <a href="images/RW_Dev_CV_2023.pdf" target="_blank" class="nav-link"
+            >CV</a
+          >
+        </li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+      <!-- burger menu for mobile site -->
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- about me section -->
+    <section class="about" id="about">
+      <img
+        src="images/profile_pic.jpeg"
+        alt="renee-profile"
+        loading="lazy"
+        class="about-img"
+      />
+      <div class="bio">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Hi! My name is Renee and I am a Software Developer. I design
+          beautiful, responsive websites. I am curious. I am a problem-solver. I
+          adore elegance and simplicity. You'll find information on my
+          experience in the CV section, and see websites I have built in the My
+          Projects section. When I'm not designing and building you can find me
+          dancing 💃, travelling ✈️ and devouring book-after-book 📚.
+        </p>
+      </div>
+    </section>
+
+    <!-- projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">My Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <h3>🎹 Piano Pitches 🎹</h3>
+          <p>
+            My final group project at Dev Academy Aotearoa. We took the
+            beautiful voices of our cohort singing 'Whai' (our cohort name), and
+            added them to our keyboard. There is also the ability for other
+            users to add their own unique voice to our playground. We were able
+            to incorporate a helper bot named Mini, who had tips and tricks for
+            using our site.
+            <strong
+              >Tech used: TypeScript, JavaScript, CSS, Cloudinary, React.</strong
+            >
+            This has been optimized for Desktop only, as this project is a work-in-progress!
+          </p>
+          <a
+            href="https://piano-pitches.devacademy.nz/"
+            target="_blank"
+            class="project-link">Piano Pitches!</a
+          >
+        </div>
+        <div class="project-container project-card">
+          <h3>📚 Renees Book Club 📚</h3>
+          <p>
+            My first personal project, started while I was at Dev Academy
+            Aotearoa. I love reading and wanted to create a website where you
+            can store books you've read, you want to read, get recommendations
+            and search for books to read. During this project I fell in love
+            with beautiful, responsive front-end development, and incorporated
+            stunning colour gradients.
+            <strong>Tech used: TypeScript, JavaScript, CSS, HTML, React.</strong
+            >
+            This has been optimized for Desktop only, as this project is a work-in-progress!
+          </p>
+          <a
+            href="https://github.com/renee-dub/renees-bookclub"
+            target="_blank"
+            class="project-link">Renees Book Club!</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xrgwbbpy" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter your name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter your email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter your message"
+                name="message"
+                class="input-field"
+                required></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-button"
+              class="submit-button"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- social links -->
+    <section class="socials" id="socials">
+      <div class="socials">
+        <a
+          href="https://www.linkedin.com/in/renee-walkinshaw-9b1b89281/"
+          target="_blank."
+        >
+          <img
+            src="images/icons8-linkedin-48.png"
+            alt="LinkedIn"
+            loading="lazy"
+            class="socicon"
+          />
+        </a>
+        <a href="https://github.com/renee-dub" target="_blank.">
+          <img
+            src="images/icons8-github-50.png"
+            alt="GitHub"
+            loading="lazy"
+            class="socicon"
+          />
+        </a>
+        <a href="https://www.instagram.com/reneedub/" target="_blank.">
+          <img
+            src="images/icons8-instagram-48.png"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+          />
+        </a>
+      </div>
+    </section>
+    <footer>
+      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">Built with 💚 by reneedub</p>
+    </footer>
+    <!-- web script -->
+    <!-- <script src="src/app.js"></script> -->
+    <!-- burger menu script mobile -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
